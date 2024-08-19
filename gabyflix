@@ -1,0 +1,45 @@
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  noLoop(); // Desenha apenas uma vez
+  background(255);
+
+  // Adiciona o título
+  let title = createDiv('GabyFlix');
+  title.position(20, 20);
+  title.style('font-size', '48px');
+  title.style('font-weight', 'bold');
+  title.style('color', '#000');
+  
+  // Adiciona a chamada
+  let chamada = createDiv('barbie<br>#barbie-barbie');
+  chamada.position(20, 100);
+  chamada.style('font-size', '32px');
+  chamada.style('font-weight', 'normal');
+  chamada.style('color', '#000');
+  
+  // Adiciona o iframe do YouTube
+  let iframe = createDiv('<iframe width="560" height="315" src="https://www.youtube.com/embed/gt_fAE1Eg2Q?si=EEv-tsY_b1B2OwKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>');
+  iframe.position(20, 200);
+  iframe.style('padding-top', '20px');
+
+  // Adiciona a seção de filmes e séries
+  let filmesETV = createDiv('<h2>Filmes e séries</h2>');
+  filmesETV.position(20, 600);
+  filmesETV.style('font-size', '24px');
+  filmesETV.style('font-weight', 'bold');
+  
+  let categoriaVideos = createDiv('<a href="https://www.youtube.com/watch?v=cs15QqG6Gjc"><img src="https://img.youtube.com/vi/cs15QqG6Gjc/maxresdefault.jpg" alt="Filme ou série 1" /></a> <a href="https://www.youtube.com/watch?v=nCmIwcycUJ8"><img src="https://img.youtube.com/vi/nCmIwcycUJ8/maxresdefault.jpg" alt="Filme ou série 2" /></a> <a href="https://www.youtube.com/watch?v=FvRmEapoHRc"><img src="https://img.youtube.com/vi/FvRmEapoHRc/maxresdefault.jpg" alt="Filme ou série 3" /></a> <a href="https://www.youtube.com/watch?v=Ipkw_hWW-Hw"><img src="https://img.youtube.com/vi/Ipkw_hWW-Hw/maxresdefault.jpg" alt="Filme ou série 4" /></a> <a href="https://www.youtube.com/watch?v=d4DzMNGoyis"><img src="https://img.youtube.com/vi/d4DzMNGoyis/maxresdefault.jpg" alt="Filme ou série 5" /></a>');
+  categoriaVideos.position(20, 650);
+  categoriaVideos.style('font-size', '16px');
+  categoriaVideos.style('padding-top', '20px');
+  
+  // Adiciona um rodapé opcional
+  let footer = createDiv('© 2024 Guiminamflix');
+  footer.position(20, windowHeight - 40);
+  footer.style('font-size', '14px');
+  footer.style('color', '#000');
+}
+
+function draw() {
+  // Função draw não é usada neste exemplo, pois tudo é desenhado apenas uma vez no setup
+}
